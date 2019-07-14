@@ -35,3 +35,8 @@ nufSAg4k4xFqYeOdNDOoSA65JMqo5py4APytp0ZqBULEmQKBgQCrW2T3GYGH2NuRT45+OOgoSfKx
 AY/1LGsj+KlYu30Xw/IUYXHUCEbHOwoq7p5ZmosNlEPnrneyhwvhlm6GykTekXeiXi/dDwQIG1ax
 i21XFOH4ZKB6orPNm2+wketRKMnuYuGajbojLynq/oZ7o0pJEFJKxakDd8vbNWXhMWOr/w==
 -----END RSA PRIVATE KEY-----
+
+
+chmod 400 myaws.pem
+
+ssh -i "myaws.pem" ec2-user@ec2-18-212-178-27.compute-1.amazonaws.com
