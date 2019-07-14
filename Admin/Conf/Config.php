@@ -17,7 +17,7 @@ return array(
     'db_name' => 'student',
     'charset' => 'utf8',
     // 默认的路由参数
-    'default_platform' => 'Home',
+    'default_platform' => 'Admin',
     'default_controller' => 'Index',
     'default_action' => 'index',
 );

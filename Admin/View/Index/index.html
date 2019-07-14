@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>学生信息管理中心</title>
+</head>
+<body>
+<div style="text-align:center;padding-bottom: 10px;">
+	<h2>学生信息管理中心(前台)</h2>
+	<a href="javascript:void(0)">添加学生</a>
+	共有<font color=red>234</font>个学生
+</div>
+<table width="600" border="1" align="center" rules="all" cellpadding="5">
+	<tr bgcolor='#ccc'>
+		<th>编号</th>
+		<th>姓名</th>
+		<th>性别</th>
+		<th>年龄</th>
+		<th>学历</th>
+		<th>工资</th>
+		<th>奖金</th>
+		<th>籍贯</th>
+		<th>操作选项</th>
+	</tr>
+	<{foreach $arrs as $arr}>
+	<tr align="center">
+		<td><{$arr.id}></td>
+		<td><{$arr.name}></td>
+		<td><{$arr.sex}></td>
+		<td><{$arr.age}></td>
+		<td><{$arr.edu}></td>
+		<td><{$arr.salary}></td>
+		<td><{$arr.bonus}></td>
+		<td><{$arr.city}></td>
+		<td>
+			<a href="javascript:void(0)">修改</a> | 
+			<a href="javascript:void(0)">删除</a>
+		</td>
+	</tr>
+	<{/foreach}>
+</table>
+</body>
+</html>
